@@ -1,0 +1,31 @@
+# The file format is a simple subset of YAML.
+# Everything after '#' is ignored (i.e. single line comment)
+
+type: Bayesian
+
+vertices:
+  - name: "x"
+  - name: "u"
+  - name: "w"
+  - name: "y"
+  - name: "z"
+
+edges :
+  - v1  : "x"
+    v2  : "u"
+  - v1  : "u"
+    v2  : "y"
+  - v1  : "y"
+    v2  : "w"
+  - v1  : "x"
+    v2  : "w"
+  - v1	: "w"
+    v2	: "z"
+
+x: "x"
+y: "y"
+
+evidence:
+  - name: "z"
+
+
